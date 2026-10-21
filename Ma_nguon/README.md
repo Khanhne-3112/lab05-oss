@@ -53,3 +53,13 @@ Khu thử có 96 ghế cố định, 68 khả dụng (16 VIP và 52 Tiêu chuẩ
 Ảnh SVG tự tạo, lưu cục bộ và ghi quyền CC0 trong `public/assets/images/LICENSE.txt`. `presentation.js` chỉ xử lý ảnh lỗi; `ticket-preview.js` chỉ chạy trên trang thử. Khi tắt JavaScript, vẫn đọc được nội dung và dùng form lab như cũ; khu chọn thử được khóa kèm giải thích.
 
 Không đưa ID demo, vé hoặc ghế vào form, Session, Cookie, CSDL hoặc test cũ. TODO sinh viên và đáp án giữ nguyên khác biệt. Không có backend bán vé, thanh toán hoặc gửi email.
+
+## Cách chạy Lab 05
+
+```bash
+sudo service postgresql start
+bash lab.sh db-config
+bash lab.sh check
+bash lab.sh test
+bash lab.sh extend
+```
